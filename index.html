@@ -1,46 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="preload"
+      as="style"
+      crossorigin="*"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="/greek.svg" />
+    <link rel="preload" as="style" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="/camara-del-icono.png" />
     <title>La fotografía</title>
-</head>
-<body>
- <header class="header">
-        <h1 class="header__title">Bienvenido a una aventura fotográfica </h1>
-        <div class="header__menu">
-                <div class="header__menu--menu">
-                    <button class="header__menu--button" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        Menu <img class="menu__button--svg" src="/photo-camera-svgrepo-com.svg" alt="Camera img">
-                    </button>
-                </div>
-                <ul>
-                    <li><a href="/index.html">Semanas</a></li>
-                </ul>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Bienvenido a una aventura fotográfica</h1>
+      <div class="header__menu">
+        <div class="header__menu--menu">
+          <button
+            class="header__menu--button"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            Menu
+            <img
+              class="menu__button--svg"
+              src="/photo-camera-svgrepo-com.svg"
+              alt="Camera img"
+            />
+          </button>
         </div>
+        <ul>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="#semanas">Semanas</a></li>
+          <li>
+            <a
+              href="https://miplataformaeducativa.skolmi.com/course/view.php?id=1366"
+              >Aula de Artística</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <article class="main">
-        <img class="main__svg" src="/vintageCamera.svg" alt="greek god's">
-        <h2>Fotografías de Artística en 10º</h2>
+      <img class="main__svg" src="/vintageCamera.svg" alt="greek god's" />
+      <h2>Fotografías de Artística en 10º</h2>
     </article>
-    <article class="weeks">
-        <h1 class="weeks__title">Semanas :</h1>
-        <article class="week">
-            <img class="week__svg" src="/greek.svg" alt="greek god's">
+    <section id="weeks" class="weeks">
+      <h1 id="semanas" class="weeks__title">Semanas :</h1>
+
+      <a class="week" href="#modal1">
+        <article>
+          <p class="week__text">Semana 1</p>
+          <img class="week__svg" src="/greek.svg" alt="greek god's" />
         </article>
-        <article class="week">
-            <img class="week__svg" src="/greek.svg" alt="greek god's">
+      </a>
+
+      <div id="modal1" class="modal" role="dialog">
+        <div class="modal__content">
+          <h1 class="modal__title">
+            Semana 1 <br />
+            Técnicas fotográficas
+          </h1>
+          <img class="modal__img" src="/random.jpg" alt="Chica con camara" />
+        </div>
+        <a href="#weeks" class="modal__close">&times;</a>
+      </div>
+
+      <a class="week" href="#modal2">
+        <article>
+          <p class="week__text">Semana 2</p>
+          <img class="week__svg" src="/greek.svg" alt="greek god's" />
         </article>
-        <article class="week">
-            <img class="week__svg" src="/greek.svg" alt="greek god's">
-        </article>
-        <article class="week">
-            <img class="week__svg" src="/greek.svg" alt="greek god's">
-        </article>
-    </article>
-    
-</body>
+      </a>
+
+      <div id="modal2" class="modal" role="dialog">
+        <div class="modal__content">
+          <h1 class="modal__title">
+            Semana 2 <br />
+            Técnicas fotográficas
+          </h1>
+          <img class="modal__img" src="/random.jpg" alt="Chica con camara" />
+        </div>
+        <a href="#weeks" class="modal__close">&times;</a>
+      </div>
+
+      <article class="week">
+        <p class="week__text">Semana 3</p>
+        <img class="week__svg" src="/greek.svg" alt="greek god's" />
+      </article>
+
+      <article class="week">
+        <p class="week__text">Semana 4</p>
+        <img class="week__svg" src="/greek.svg" alt="greek god's" />
+      </article>
+
+      <article class="week">
+        <p class="week__text">Semana 5</p>
+        <img class="week__svg" src="/greek.svg" alt="greek god's" />
+      </article>
+      <article class="week">
+        <p class="week__text">Semana 6</p>
+        <img class="week__svg" src="/greek.svg" alt="greek god's" />
+      </article>
+      <article class="week">
+        <p class="week__text">Semana 7</p>
+        <img class="week__svg" src="/greek.svg" alt="greek god's" />
+      </article>
+
+      <a href="#weeks" class="backdrop"></a>
+    </section>
+    <footer class="footer">
+      <article class="footer__container">
+        <div class="footer__programer_details">
+          <div class="details">
+            <h2>Location</h2>
+            <p>
+              Kari Hernandez <br />
+              Tenerife - España
+            </p>
+          </div>
+          <div class="social">
+            <h2>Encuentrame en</h2>
+            <a
+              href="https://www.linkedin.com/in/kari-anntonella-hernandez-fagundez-4581bb122"
+              ><img src="/linkedin.svg" alt="linkedin"
+            /></a>
+          </div>
+        </div>
+      </article>
+    </footer>
+
+    <div class="copyright">
+      <p>Copyright © Your Website 2022</p>
+    </div>
+  </body>
 </html>
