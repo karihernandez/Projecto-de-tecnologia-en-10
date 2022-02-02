@@ -64,3 +64,47 @@ ul:hover {
 .header__menu li a:hover {
   text-decoration: underline;
 }
+.main {
+  background-color: var(--third-color);
+  padding: 4em 0;
+  display: block;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+.main__svg {
+  height: 300px;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+.weeks {
+  margin-top: 2em;
+}
+.weeks__title {
+  margin-left: 1em;
+  color: var(--primary-text-color);
+  font-weight: bold;
+}
+.week {
+  width: 250px;
+  height: 250px;
+  background-color: var(--fourth-color);
+  margin: 1em;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 250px;
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 450ms all;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+.week__svg {
+  width: 200px;
+  height: 250px;
+  display: block;
+  margin: 0 auto 0 auto;
+}
