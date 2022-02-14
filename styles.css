@@ -344,15 +344,19 @@ article.week {
 }
 .social a {
   padding: 0.5rem;
-  border-radius: 100%;
+  border-radius: 0.5rem;
   display: inline-flex;
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 4rem;
+  height: 4rem;
   font-size: 1.25rem;
   justify-content: center;
   align-items: center;
-  border: 0.125rem solid white;
+  background-color: var(--hover-color);
 }
+.social_img {
+  width: 4rem;
+}
+
 .copyright {
   background-color: var(--fifth-color);
 }
