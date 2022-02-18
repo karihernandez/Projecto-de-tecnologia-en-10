@@ -306,6 +306,9 @@ article.week {
   margin-right: auto;
   width: 100%;
 }
+.modal iframe {
+  border: none;
+}
 .modal_table {
   font-family: "Merriweather", serif;
   border-collapse: collapse;
