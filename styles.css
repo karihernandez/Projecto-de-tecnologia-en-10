@@ -238,6 +238,27 @@ article.week {
   right: 10px;
 }
 
+.modal__content blockquote {
+  position: relative;
+}
+
+.modal__content blockquote:before {
+  position: absolute;
+  content: open-quote;
+  font-size: 4em;
+  margin-left: -0.6em;
+  margin-top: -0.4em;
+}
+.modal__content blockquote:after {
+  position: absolute;
+  content: close-quote;
+  font-size: 4em;
+  bottom: 0;
+  right: 0;
+  margin-right: -0.6em;
+  margin-bottom: -0.8em;
+}
+
 .modal__close {
   position: absolute;
   width: 20px;
@@ -264,9 +285,9 @@ article.week {
   margin-right: auto;
   width: 100%;
 }
-.modal__content p,
-.modal__content h3,
-.modal__content h4 {
+.modal__content > p,
+.modal__content > h3,
+.modal__content > h4 {
   padding: 0 1.5rem;
 }
 .modal__big-img {
@@ -288,8 +309,6 @@ article.week {
 .modal_table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 95%;
-  margin: 1rem auto 0;
 }
 .modal_table td,
 .modal_table th {
@@ -311,6 +330,19 @@ article.week {
   text-align: left;
   background-color: var(--main-color);
   color: var(--primary-text-color);
+}
+.modal_table thead {
+  position: sticky;
+  top: 0;
+}
+.modal_table caption {
+  text-align: left;
+}
+.modal_table_container {
+  max-height: 350px;
+  overflow-y: auto;
+  width: 95%;
+  margin: 1rem auto 0;
 }
 .footer {
   background-color: var(--secondary-color);
