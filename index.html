@@ -21,13 +21,13 @@
   </head>
   <body>
     <div id="weeks" class="main">
-      <nav class="header">
-        <h2 class="header__title">Bienvenido a una aventura fotográfica</h2>
+      <nav class="heading">
+        <h2 class="heading__title">Bienvenido a una aventura fotográfica</h2>
 
-        <div class="header__menu">
-          <div class="header__menu--menu">
+        <div class="heading__menu">
+          <div class="heading__menu--menu">
             <button
-              class="header__menu--button"
+              class="heading__menu--button"
               type="button"
               data-toggle="collapse"
               data-target="#navbarResponsive"
@@ -43,22 +43,24 @@
             </button>
           </div>
 
-          <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="#semanas">Semanas</a></li>
-            <li>
-              <a
-                href="https://miplataformaeducativa.skolmi.com/course/view.php?id=1366"
-                >Aula de Artística</a
-              >
-            </li>
-          </ul>
+          <div class="menu__container">
+            <ul>
+              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="#semanas">Semanas</a></li>
+              <li>
+                <a
+                  href="https://miplataformaeducativa.skolmi.com/course/view.php?id=1366"
+                  >Aula de Artística</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
 
-      <header class="heading">
+      <header class="header">
         <img
-          class="heading__svg"
+          class="header__svg"
           src="https://svgsilh.com/svg/2029821.svg"
           alt="Vintage camera"
         />
@@ -384,7 +386,7 @@
       </article>
       <a href="#weeks" class="backdrop"></a>
     </aside>
-    <div id="modal2" class="modal" role="dialog">
+    <aside id="modal2" class="modal" role="dialog">
       <div class="modal__content">
         <h3 class="modal__title">
           Semana 2 <br />
@@ -394,7 +396,7 @@
         <a href="#weeks" class="modal__close">&times;</a>
       </div>
       <a href="#weeks" class="backdrop"></a>
-    </div>
+    </aside>
     <div id="modal3" class="modal" role="dialog">
       <div class="modal__content">
         <h3 class="modal__title">
@@ -432,8 +434,33 @@
       <div class="modal__content">
         <h3 class="modal__title">
           Semana 6 <br />
-          (Sin determinar)
+          Intervención fotográfica
         </h3>
+        <p>
+          A continuación con algunos ejemplos inspirados en el siguiente
+          fragmento de Las flores del mal:
+
+          <figure>
+            <blockquote>
+              ...Y, cuando me hastie de estas farsas impías, posaré sobre él mi
+              frágil y fuerte mano; y mis uñas, parecidas a garras de arpías,
+              sabrán hasta su corazón abrirse un camino
+            </blockquote>
+
+            <figcaption>
+              Pasaje de Las flores del mal de Charles Pierre Baudelaire
+            </figcaption>
+          </figure>
+        </p>
+        <iframe
+          class="modal__vid"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/eSrgwfYw9vk"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
 
         <a href="#weeks" class="modal__close">&times;</a>
       </div>
